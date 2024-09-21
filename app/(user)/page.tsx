@@ -11,6 +11,7 @@ import {
 import Header from "../components/header";
 import Hero from "../components/hero";
 import { About } from "../components/about";
+import { Projects } from "../components/projects";
 
 export const revalidate = 30;
 export default async function Home() {
@@ -31,7 +32,9 @@ export default async function Home() {
       <section id="about" className="snap-center">
         <About pageInfo={pageInfo} />
       </section>
-
+      <section id="projects" className="snap-center">
+        <Projects projects={projects} />
+      </section>
       <Toaster />
     </div>
   );

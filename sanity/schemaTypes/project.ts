@@ -29,6 +29,17 @@ export default defineType({
       title: "Link To Build",
       type: "url",
     }),
+    defineField({
+      name: "linkToGit",
+      title: "Link To Github",
+      type: "url",
+    }),
+    defineField({
+      name: "techStack",
+      title: "Tech Stack",
+      type: "array",
+      of: [{ type: "string" }],
+    }),
   ],
 
   preview: {

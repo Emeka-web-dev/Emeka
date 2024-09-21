@@ -24,6 +24,8 @@ export const projectQuery = groq`
     image,
     linkToBuild,
     title,
+    linkToGit,
+    techStack,
 }
 `;
 

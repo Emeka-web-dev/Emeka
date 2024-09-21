@@ -40,10 +40,12 @@ export interface Social extends Base {
 
 export interface Project extends Base {
   _type: "social";
-  linkToBuild: string;
+  linkToBuild?: string;
+  linkToGit?: string;
   title: string;
   summary: string;
   image: Image;
+  techStack: string[];
 }
 
 export interface Experience extends Base {

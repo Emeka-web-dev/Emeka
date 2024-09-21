@@ -34,7 +34,7 @@ export function About({ pageInfo }: Props) {
           <Image
             src={urlFor(pageInfo.profilePic).url()}
             alt="about image"
-            layout="fill"
+            fill
             className="object-cover rounded-full md:rounded-lg"
           />
         </FramerContainer>
