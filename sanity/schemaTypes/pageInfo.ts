@@ -48,6 +48,15 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "resume",
+      title: "Resume",
+      type: "file",
+      options: {
+        accept: "application/pdf",
+      },
+    }),
+
+    defineField({
       name: "heroMessage",
       title: "Hero Message",
       type: "array",

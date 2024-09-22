@@ -1,8 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import { Toaster } from "react-hot-toast";
-import { PageInfo, Social, Project, Experience, Skill } from "@/typings";
+import { PageInfo, Social, Project, Skill } from "@/typings";
 import {
-  experienceQuery,
   pageInfoQuery,
   projectQuery,
   skillQuery,
@@ -12,13 +11,15 @@ import Header from "../components/header";
 import Hero from "../components/hero";
 import { About } from "../components/about";
 import { Projects } from "../components/projects";
+import { UserSkills } from "../components/user-skills";
+import { ContactMe } from "../components/contact-me";
 
 export const revalidate = 30;
 export default async function Home() {
   const pageInfo: PageInfo = await client.fetch(pageInfoQuery);
   const socials: Social[] = await client.fetch(socialQuery);
   const projects: Project[] = await client.fetch(projectQuery);
-  const experiences: Experience[] = await client.fetch(experienceQuery);
+  // const experiences: Experience[] = await client.fetch(experienceQuery);
   const skills: Skill[] = await client.fetch(skillQuery);
 
   // console.log({ pageInfo, socials, projects, experiences, skills });
@@ -34,6 +35,12 @@ export default async function Home() {
       </section>
       <section id="projects" className="snap-center">
         <Projects projects={projects} />
+      </section>
+      <section id="skills" className="snap-center">
+        <UserSkills skills={skills} />
+      </section>
+      <section id="contact" className="snap-center">
+        <ContactMe pageInfo={pageInfo} />
       </section>
       <Toaster />
     </div>
