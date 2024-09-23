@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "I am a Software Developer based in Nigeria",
     type: "website",
     locale: "en_US",
-    url: "",
+    url: "https://emeka-chukwu.vercel.app",
     siteName: "OpesTech",
   },
 };

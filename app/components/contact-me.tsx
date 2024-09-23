@@ -60,7 +60,7 @@ export const ContactMe = ({ pageInfo }: Props) => {
   };
   return (
     <div className="h-screen flex flex-col overflow-hidden text-left max-w-6xl px-4 mx-auto items-center">
-      <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl pt-20">
+      <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl mt-20 md:mt-14">
         Contact
       </h3>
       <div className="flex flex-col items-center justify-center h-full overflow-y-auto py-3 space-y-2 scrollbar-track-gray-400/20 scrollbar-thumb-[#cc5223]/80 scrollbar-thin scroll-smooth">

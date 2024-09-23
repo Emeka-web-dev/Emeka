@@ -14,7 +14,7 @@ export function About({ pageInfo }: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex flex-col text-center md:text-left max-w-6xl px-6 mx-auto items-center gap-y-6"
     >
-      <h3 className="pt-14 uppercase tracking-[10px] text-gray-500 text-xl">
+      <h3 className="mt-20 md:mt-14 uppercase tracking-[10px] text-gray-500 text-xl">
         About
       </h3>
       <div className="flex flex-col h-full md:flex-row items-center md:justify-center gap-4 gap-y-10">

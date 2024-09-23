@@ -45,7 +45,7 @@ export const Projects = ({ projects }: Props) => {
       transition={{ duration: 1.5 }}
       className="h-screen relative flex flex-col text-left max-w-full mx-auto items-center"
     >
-      <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl pt-16">
+      <h3 className=" uppercase tracking-[10px] text-gray-500 text-xl mt-20 md:mt-14">
         projects
       </h3>
       <div className="w-full absolute top-[35%] left-0 h-[300px] bg-[#cc5223]/20 -skew-y-12" />

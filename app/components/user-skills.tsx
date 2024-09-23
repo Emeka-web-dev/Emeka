@@ -9,7 +9,7 @@ type Props = {
 export const UserSkills = ({ skills }: Props) => {
   return (
     <FramerContainer className="h-screen flex flex-col text-center md:text-left max-w-[2000px] lg:px-10 items-center ">
-      <h3 className="uppercase tracking-[10px] text-xl text-gray-500 pt-16">
+      <h3 className="uppercase tracking-[10px] text-xl text-gray-500 mt-20 md:mt-14">
         skill
       </h3>
 
