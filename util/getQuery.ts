@@ -27,7 +27,8 @@ export const projectQuery = groq`
     title,
     linkToGit,
     techStack,
-}
+    _updatedAt,
+} | order(_updatedAt asc)
 `;
 
 export const experienceQuery = groq`

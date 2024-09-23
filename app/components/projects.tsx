@@ -108,7 +108,7 @@ export const Projects = ({ projects }: Props) => {
                       </div>
                     </div>
                     <p className="text-gray-300 py-2">{portfolio.summary}</p>
-                    <div className="py-2 flex flex-wrap gap-x-3">
+                    <div className="py-2 flex flex-wrap gap-3">
                       {portfolio.techStack.map((tech) => (
                         <span
                           className="py-1 px-2 text-sm font-semibold rounded-full bg-white text-gray-900"
