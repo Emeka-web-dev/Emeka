@@ -15,7 +15,15 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Chukwu Emeka Rex",
-  description: "Software Developer",
+  description: "I am a Software Developer based in Nigeria",
+  openGraph: {
+    title: "Chukwu Emeka Rex",
+    description: "I am a Software Developer based in Nigeria",
+    type: "website",
+    locale: "en_US",
+    url: "",
+    siteName: "OpesTech",
+  },
 };
 
 export default function RootLayout({

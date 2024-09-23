@@ -50,9 +50,9 @@ export const Projects = ({ projects }: Props) => {
       </h3>
       <div className="w-full absolute top-[35%] left-0 h-[300px] bg-[#cc5223]/20 -skew-y-12" />
       <div className="w-full max-w-xl mx-auto h-full px-4 gap-y-4 flex flex-col justify-center">
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           return (
-            <Fragment key={project._id}>
+            <Fragment key={i}>
               <div
                 onClick={() => onClick(project)}
                 className="flex items-center gap-x-2 cursor-pointer z-30 group"

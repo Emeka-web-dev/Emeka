@@ -12,6 +12,14 @@ export type Image = {
     _type: "reference";
   };
 };
+
+export type Resume = {
+  _type: "file";
+  asset: {
+    _ref: string;
+    _type: "reference";
+  };
+};
 type SocialPage = {
   _ref: string;
   _type: "reference";
@@ -30,6 +38,7 @@ export interface PageInfo extends Base {
   backgroundInfo: string;
   heroMessage: string[];
   socials: SocialPage[];
+  resume: Resume;
 }
 
 export interface Social extends Base {

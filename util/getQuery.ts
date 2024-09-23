@@ -16,6 +16,7 @@ export const pageInfoQuery = groq`
         role,
         profilePic,
         address,
+        resume,
     }
 `;
 export const projectQuery = groq`

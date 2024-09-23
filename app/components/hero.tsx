@@ -1,14 +1,13 @@
 "use client";
 
-import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { BackgroundCircles } from "./background-circle";
+import { urlFor } from "@/sanity/lib/image";
+import { PageInfo } from "@/typings";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { PageInfo } from "@/typings";
-import { urlFor } from "@/sanity/lib/image";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import { BackgroundCircles } from "./background-circle";
 import { FramerContainer } from "./framer-container";
-import { motion } from "framer-motion";
 
 type Props = {
   pageInfo: PageInfo;
@@ -19,6 +18,7 @@ function Hero({ pageInfo }: Props) {
     loop: true,
     delaySpeed: 2000,
   });
+
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
@@ -95,8 +95,8 @@ function Hero({ pageInfo }: Props) {
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
-          <Link href="#experience">
-            <button className="heroButton">Experience</button>
+          <Link href="#contact">
+            <button className="heroButton">Contact</button>
           </Link>
           <Link href="#skills">
             <button className="heroButton">Skills</button>
