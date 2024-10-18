@@ -97,7 +97,7 @@ export const ContactMe = ({ pageInfo }: Props) => {
               placeholder="Phone"
               name="phone"
               required
-              value={formInput.name}
+              value={formInput.phone}
               onChange={onChange}
               className="contactInput"
             />
